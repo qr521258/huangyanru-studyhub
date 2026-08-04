@@ -1198,12 +1198,26 @@ window.DATA_SCIENCE = {
 /* ===== 好词好句种子数据 ===== */
 window.DATA_WORDS = {
   seed:[
-    { id:'w1', word:'晶莹', pinyin:'jīng yíng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容光亮透明', association:'草叶上晶莹的露珠' },
-    { id:'w2', word:'翩翩起舞', pinyin:'piān piān qǐ wǔ', source:'金波作品', scene:'写景', type:'word', note:'形容轻快地跳舞', association:'蝴蝶翩翩起舞' },
-    { id:'w3', word:'叽叽喳喳', pinyin:'jī jī zhā zhā', source:'课标经典必读', scene:'写景', type:'word', note:'拟声词，鸟叫声', association:'小鸟叽叽喳喳' },
-    { id:'w4', word:'蔚蓝', pinyin:'wèi lán', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容深蓝色', association:'蔚蓝的天空' },
-    { id:'w5', word:'s1', source:'《快乐读书吧》', scene:'写景', type:'sentence', note:'比喻句', content:'秋天的枫叶像一团团燃烧的火焰，染红了整座山坡。', association:'写秋天景色' },
-    { id:'w6', word:'s2', source:'金波作品', scene:'写物', type:'sentence', note:'拟人句', content:'春风温柔地抚摸着大地，唤醒了沉睡的小草。', association:'写春天到来' }
+    // 4个字的好词语（拟声词、状态词、精准形容）
+    { id:'w1', word:'翩翩起舞', pinyin:'piān piān qǐ wǔ', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容轻快地跳舞', association:'蝴蝶在花丛中翩翩起舞' },
+    { id:'w2', word:'叽叽喳喳', pinyin:'jī jī zhā zhā', source:'金波作品', scene:'写景', type:'word', note:'拟声词，小鸟叫声', association:'窗外的小鸟叽叽喳喳地唱歌' },
+    { id:'w3', word:'波光粼粼', pinyin:'bō guāng lín lín', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容水面反射阳光闪亮的样子', association:'湖面波光粼粼，像撒了一层碎金' },
+    { id:'w4', word:'郁郁葱葱', pinyin:'yù yù cōng cōng', source:'金波作品', scene:'写景', type:'word', note:'形容草木茂盛翠绿', association:'山上的树木郁郁葱葱' },
+    { id:'w5', word:'熙熙攘攘', pinyin:'xī xī rǎng rǎng', source:'课标经典必读', scene:'写事', type:'word', note:'形容人来人往非常热闹', association:'集市上熙熙攘攘，好不热闹' },
+    { id:'w6', word:'小心翼翼', pinyin:'xiǎo xīn yì yì', source:'《快乐读书吧》', scene:'写人', type:'word', note:'形容举动十分谨慎', association:'她小心翼翼地捧着刚孵出的小鸡' },
+    { id:'w7', word:'兴高采烈', pinyin:'xìng gāo cǎi liè', source:'课标经典必读', scene:'写人', type:'word', note:'形容非常高兴', association:'同学们兴高采烈地参加运动会' },
+    { id:'w8', word:'目不转睛', pinyin:'mù bù zhuǎn jīng', source:'金波作品', scene:'写人', type:'word', note:'眼睛一动不动地盯着看', association:'他目不转睛地看着魔术表演' },
+    { id:'w9', word:'五光十色', pinyin:'wǔ guāng shí sè', source:'《快乐读书吧》', scene:'写物', type:'word', note:'形容色彩鲜艳、花样繁多', association:'贝壳在阳光下闪着五光十色的光芒' },
+    { id:'w10', word:'栩栩如生', pinyin:'xǔ xǔ rú shēng', source:'课标经典必读', scene:'写物', type:'word', note:'形容画作或描述非常逼真', association:'画上的金鱼栩栩如生' },
+    { id:'w11', word:'淅淅沥沥', pinyin:'xī xī lì lì', source:'金波作品', scene:'写景', type:'word', note:'拟声词，形容小雨声', association:'窗外淅淅沥沥下着小雨' },
+    { id:'w12', word:'含苞欲放', pinyin:'hán bāo yù fàng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容花蕾即将开放', association:'花园里的玫瑰含苞欲放' },
+    // 好句（比喻句、拟人句）
+    { id:'s1', source:'《快乐读书吧》', scene:'写景', type:'sentence', note:'比喻句', content:'秋天的枫叶像一团团燃烧的火焰，染红了整座山坡。', association:'写秋天景色' },
+    { id:'s2', source:'金波作品', scene:'写景', type:'sentence', note:'拟人句', content:'春风温柔地抚摸着大地，唤醒了沉睡的小草。', association:'写春天到来' },
+    { id:'s3', source:'课标经典必读', scene:'写事', type:'sentence', note:'比喻句', content:'他的笑声像一串银铃，清脆地回荡在教室里。', association:'写欢乐场景' },
+    { id:'s4', source:'金波作品', scene:'写人', type:'sentence', note:'比喻句', content:'妈妈的眼睛像两颗黑葡萄，总是温柔地看着我。', association:'写人物外貌' },
+    { id:'s5', source:'《快乐读书吧》', scene:'写物', type:'sentence', note:'拟人句', content:'柳树弯着腰，长长的辫子垂到水面上，好像在照镜子。', association:'写柳树' },
+    { id:'s6', source:'课标经典必读', scene:'哲理', type:'sentence', note:'比喻句', content:'书就像一盏明灯，照亮了我们前进的道路。', association:'写读书的意义' }
   ],
   topics:['写人','写事','写景','写物','哲理']
 };
