@@ -1198,26 +1198,147 @@ window.DATA_SCIENCE = {
 /* ===== 好词好句种子数据 ===== */
 window.DATA_WORDS = {
   seed:[
-    // 4个字的好词语（拟声词、状态词、精准形容）
+    // 4个字的好词语（拟声词、状态词、精准形容）- 共109个，每天4个轮换30天
     { id:'w1', word:'翩翩起舞', pinyin:'piān piān qǐ wǔ', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容轻快地跳舞', association:'蝴蝶在花丛中翩翩起舞' },
     { id:'w2', word:'叽叽喳喳', pinyin:'jī jī zhā zhā', source:'金波作品', scene:'写景', type:'word', note:'拟声词，小鸟叫声', association:'窗外的小鸟叽叽喳喳地唱歌' },
-    { id:'w3', word:'波光粼粼', pinyin:'bō guāng lín lín', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容水面反射阳光闪亮的样子', association:'湖面波光粼粼，像撒了一层碎金' },
-    { id:'w4', word:'郁郁葱葱', pinyin:'yù yù cōng cōng', source:'金波作品', scene:'写景', type:'word', note:'形容草木茂盛翠绿', association:'山上的树木郁郁葱葱' },
-    { id:'w5', word:'熙熙攘攘', pinyin:'xī xī rǎng rǎng', source:'课标经典必读', scene:'写事', type:'word', note:'形容人来人往非常热闹', association:'集市上熙熙攘攘，好不热闹' },
-    { id:'w6', word:'小心翼翼', pinyin:'xiǎo xīn yì yì', source:'《快乐读书吧》', scene:'写人', type:'word', note:'形容举动十分谨慎', association:'她小心翼翼地捧着刚孵出的小鸡' },
-    { id:'w7', word:'兴高采烈', pinyin:'xìng gāo cǎi liè', source:'课标经典必读', scene:'写人', type:'word', note:'形容非常高兴', association:'同学们兴高采烈地参加运动会' },
-    { id:'w8', word:'目不转睛', pinyin:'mù bù zhuǎn jīng', source:'金波作品', scene:'写人', type:'word', note:'眼睛一动不动地盯着看', association:'他目不转睛地看着魔术表演' },
-    { id:'w9', word:'五光十色', pinyin:'wǔ guāng shí sè', source:'《快乐读书吧》', scene:'写物', type:'word', note:'形容色彩鲜艳、花样繁多', association:'贝壳在阳光下闪着五光十色的光芒' },
-    { id:'w10', word:'栩栩如生', pinyin:'xǔ xǔ rú shēng', source:'课标经典必读', scene:'写物', type:'word', note:'形容画作或描述非常逼真', association:'画上的金鱼栩栩如生' },
-    { id:'w11', word:'淅淅沥沥', pinyin:'xī xī lì lì', source:'金波作品', scene:'写景', type:'word', note:'拟声词，形容小雨声', association:'窗外淅淅沥沥下着小雨' },
-    { id:'w12', word:'含苞欲放', pinyin:'hán bāo yù fàng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'形容花蕾即将开放', association:'花园里的玫瑰含苞欲放' },
-    // 好句（比喻句、拟人句）
+    { id:'w3', word:'波光粼粼', pinyin:'bō guāng lín lín', source:'《快乐读书吧》', scene:'写景', type:'word', note:'水面反射阳光闪亮', association:'湖面波光粼粼像撒了一层碎金' },
+    { id:'w4', word:'郁郁葱葱', pinyin:'yù yù cōng cōng', source:'金波作品', scene:'写景', type:'word', note:'草木茂盛翠绿', association:'山上的树木郁郁葱葱' },
+    { id:'w5', word:'淅淅沥沥', pinyin:'xī xī lì lì', source:'金波作品', scene:'写景', type:'word', note:'拟声词，小雨声', association:'窗外淅淅沥沥下着小雨' },
+    { id:'w6', word:'含苞欲放', pinyin:'hán bāo yù fàng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'花蕾即将开放', association:'花园里的玫瑰含苞欲放' },
+    { id:'w7', word:'万里无云', pinyin:'wàn lǐ wú yún', source:'课标经典必读', scene:'写景', type:'word', note:'天空晴朗无云', association:'今天天气真好万里无云' },
+    { id:'w8', word:'鸟语花香', pinyin:'niǎo yǔ huā xiāng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'鸟儿叫花儿香', association:'春天来了到处鸟语花香' },
+    { id:'w9', word:'春暖花开', pinyin:'chūn nuǎn huā kāi', source:'金波作品', scene:'写景', type:'word', note:'春天温暖鲜花盛开', association:'春暖花开的季节最适合郊游' },
+    { id:'w10', word:'秋高气爽', pinyin:'qiū gāo qì shuǎng', source:'课标经典必读', scene:'写景', type:'word', note:'秋天晴朗气候凉爽', association:'秋高气爽正是爬山的好时候' },
+    { id:'w11', word:'银装素裹', pinyin:'yín zhuāng sù guǒ', source:'《快乐读书吧》', scene:'写景', type:'word', note:'大雪覆盖的景色', association:'冬天大地银装素裹' },
+    { id:'w12', word:'繁星点点', pinyin:'fán xīng diǎn diǎn', source:'金波作品', scene:'写景', type:'word', note:'夜空中星星很多', association:'夏夜繁星点点美极了' },
+    { id:'w13', word:'风和日丽', pinyin:'fēng hé rì lì', source:'课标经典必读', scene:'写景', type:'word', note:'微风和煦阳光明媚', association:'风和日丽去放风筝' },
+    { id:'w14', word:'倾盆大雨', pinyin:'qīng pén dà yǔ', source:'《快乐读书吧》', scene:'写景', type:'word', note:'雨下得非常大', association:'放学时下起了倾盆大雨' },
+    { id:'w15', word:'一望无际', pinyin:'yī wàng wú jì', source:'金波作品', scene:'写景', type:'word', note:'一眼看不到边', association:'草原一望无际像绿色的海洋' },
+    { id:'w16', word:'山清水秀', pinyin:'shān qīng shuǐ xiù', source:'课标经典必读', scene:'写景', type:'word', note:'山水清秀美丽', association:'我的家乡山清水秀' },
+    { id:'w17', word:'冰天雪地', pinyin:'bīng tiān xuě dì', source:'《快乐读书吧》', scene:'写景', type:'word', note:'冰雪覆盖大地', association:'冬天冰天雪地真冷啊' },
+    { id:'w18', word:'旭日东升', pinyin:'xù rì dōng shēng', source:'金波作品', scene:'写景', type:'word', note:'太阳从东方升起', association:'旭日东升新的一天开始了' },
+    { id:'w19', word:'夕阳西下', pinyin:'xī yáng xī xià', source:'课标经典必读', scene:'写景', type:'word', note:'太阳从西边落下', association:'夕阳西下天边染成了红色' },
+    { id:'w20', word:'月明星稀', pinyin:'yuè míng xīng xī', source:'《快乐读书吧》', scene:'写景', type:'word', note:'月亮明亮星星稀少', association:'月明星稀的夜晚格外宁静' },
+    { id:'w21', word:'云雾缭绕', pinyin:'yún wù liáo rào', source:'金波作品', scene:'写景', type:'word', note:'云雾环绕山峰', association:'山顶云雾缭绕像仙境' },
+    { id:'w22', word:'花红柳绿', pinyin:'huā hóng liǔ lǜ', source:'课标经典必读', scene:'写景', type:'word', note:'花红柳绿春天景象', association:'公园里花红柳绿真好看' },
+    { id:'w23', word:'金桂飘香', pinyin:'jīn guì piāo xiāng', source:'《快乐读书吧》', scene:'写景', type:'word', note:'桂花开放香气飘散', association:'秋天金桂飘香沁人心脾' },
+    { id:'w24', word:'鹅毛大雪', pinyin:'é máo dà xuě', source:'金波作品', scene:'写景', type:'word', note:'雪片像鹅毛一样大', association:'窗外飘起了鹅毛大雪' },
+    { id:'w25', word:'艳阳高照', pinyin:'yàn yáng gāo zhào', source:'课标经典必读', scene:'写景', type:'word', note:'阳光明亮地照耀', association:'午后艳阳高照热极了' },
+    { id:'w26', word:'春回大地', pinyin:'chūn huí dà dì', source:'《快乐读书吧》', scene:'写景', type:'word', note:'春天回到大地万物复苏', association:'春回大地小草偷偷探出了头' },
+    { id:'w27', word:'绿树成荫', pinyin:'lǜ shù chéng yīn', source:'金波作品', scene:'写景', type:'word', note:'树木茂密形成树荫', association:'夏天绿树成荫凉快极了' },
+    { id:'w28', word:'秋雨绵绵', pinyin:'qiū yǔ mián mián', source:'课标经典必读', scene:'写景', type:'word', note:'秋天的雨连绵不断', association:'秋雨绵绵下了一整天' },
+    { id:'w29', word:'大雪纷飞', pinyin:'dà xuě fēn fēi', source:'《快乐读书吧》', scene:'写景', type:'word', note:'雪花纷纷扬扬飘落', association:'大雪纷飞孩子们在堆雪人' },
+    { id:'w30', word:'晨光熹微', pinyin:'chén guāng xī wēi', source:'金波作品', scene:'写景', type:'word', note:'清晨阳光微弱', association:'晨光熹微小鸟开始歌唱' },
+    { id:'w31', word:'小心翼翼', pinyin:'xiǎo xīn yì yì', source:'《快乐读书吧》', scene:'写人', type:'word', note:'举动十分谨慎', association:'她小心翼翼地捧着刚孵出的小鸡' },
+    { id:'w32', word:'兴高采烈', pinyin:'xìng gāo cǎi liè', source:'课标经典必读', scene:'写人', type:'word', note:'形容非常高兴', association:'同学们兴高采烈地参加运动会' },
+    { id:'w33', word:'目不转睛', pinyin:'mù bù zhuǎn jīng', source:'金波作品', scene:'写人', type:'word', note:'眼睛一动不动地盯着看', association:'他目不转睛地看着魔术表演' },
+    { id:'w34', word:'眉开眼笑', pinyin:'méi kāi yǎn xiào', source:'《快乐读书吧》', scene:'写人', type:'word', note:'非常高兴的样子', association:'收到礼物她眉开眼笑' },
+    { id:'w35', word:'愁眉苦脸', pinyin:'chóu méi kǔ liǎn', source:'课标经典必读', scene:'写人', type:'word', note:'发愁苦恼的表情', association:'他考砸了愁眉苦脸地回家' },
+    { id:'w36', word:'神采飞扬', pinyin:'shén cǎi fēi yáng', source:'金波作品', scene:'写人', type:'word', note:'精神饱满神采奕奕', association:'他演讲时神采飞扬' },
+    { id:'w37', word:'和蔼可亲', pinyin:'hé ǎi kě qīn', source:'《快乐读书吧》', scene:'写人', type:'word', note:'态度温和容易亲近', association:'语文老师和蔼可亲' },
+    { id:'w38', word:'专心致志', pinyin:'zhuān xīn zhì zhì', source:'课标经典必读', scene:'写人', type:'word', note:'一心一意集中精神', association:'他专心致志地做作业' },
+    { id:'w39', word:'愁眉不展', pinyin:'chóu méi bù zhǎn', source:'金波作品', scene:'写人', type:'word', note:'因忧愁而皱着眉头', association:'她愁眉不展好像有心事' },
+    { id:'w40', word:'笑容满面', pinyin:'xiào róng mǎn miàn', source:'《快乐读书吧》', scene:'写人', type:'word', note:'脸上充满笑容', association:'妈妈笑容满面地迎接我' },
+    { id:'w41', word:'精神抖擞', pinyin:'jīng shén dǒu sǒu', source:'课标经典必读', scene:'写人', type:'word', note:'精神振奋饱满', association:'运动员精神抖擞地入场' },
+    { id:'w42', word:'满面春风', pinyin:'mǎn miàn chūn fēng', source:'金波作品', scene:'写人', type:'word', note:'满脸高兴得意的样子', association:'老师满面春风地走进教室' },
+    { id:'w43', word:'心花怒放', pinyin:'xīn huā nù fàng', source:'《快乐读书吧》', scene:'写人', type:'word', note:'心里高兴得像花开放', association:'听到好消息他心花怒放' },
+    { id:'w44', word:'喜出望外', pinyin:'xǐ chū wàng wài', source:'课标经典必读', scene:'写人', type:'word', note:'意想不到地高兴', association:'考了第一名她喜出望外' },
+    { id:'w45', word:'愁容满面', pinyin:'chóu róng mǎn miàn', source:'金波作品', scene:'写人', type:'word', note:'满脸忧愁的样子', association:'爸爸愁容满面地叹气' },
+    { id:'w46', word:'目瞪口呆', pinyin:'mù dèng kǒu dāi', source:'《快乐读书吧》', scene:'写人', type:'word', note:'吃惊得说不出话', association:'看到魔术他目瞪口呆' },
+    { id:'w47', word:'兴致勃勃', pinyin:'xìng zhì bó bó', source:'课标经典必读', scene:'写人', type:'word', note:'兴趣很浓的样子', association:'他兴致勃勃地讲着故事' },
+    { id:'w48', word:'和颜悦色', pinyin:'hé yán yuè sè', source:'金波作品', scene:'写人', type:'word', note:'态度温和脸色愉悦', association:'奶奶总是和颜悦色地说话' },
+    { id:'w49', word:'聚精会神', pinyin:'jù jīng huì shén', source:'《快乐读书吧》', scene:'写人', type:'word', note:'注意力高度集中', association:'同学们聚精会神地听讲' },
+    { id:'w50', word:'愁肠百结', pinyin:'chóu cháng bǎi jié', source:'课标经典必读', scene:'写人', type:'word', note:'忧愁郁结心中', association:'她愁肠百结不知怎么办' },
+    { id:'w51', word:'眉飞色舞', pinyin:'méi fēi sè wǔ', source:'金波作品', scene:'写人', type:'word', note:'形容非常高兴得意', association:'他眉飞色舞地讲着趣事' },
+    { id:'w52', word:'欢声笑语', pinyin:'huān shēng xiào yǔ', source:'《快乐读书吧》', scene:'写人', type:'word', note:'欢乐的说笑声', association:'操场上充满了欢声笑语' },
+    { id:'w53', word:'全神贯注', pinyin:'quán shén guàn zhù', source:'课标经典必读', scene:'写人', type:'word', note:'全部精神集中', association:'他全神贯注地下着棋' },
+    { id:'w54', word:'心满意足', pinyin:'xīn mǎn yì zú', source:'金波作品', scene:'写人', type:'word', note:'心里非常满足', association:'吃完大餐他心满意足' },
+    { id:'w55', word:'愁云满面', pinyin:'chóu yún mǎn miàn', source:'《快乐读书吧》', scene:'写人', type:'word', note:'脸上布满忧愁', association:'他愁云满面好像出事了' },
+    { id:'w56', word:'笑逐颜开', pinyin:'xiào zhú yán kāi', source:'课标经典必读', scene:'写人', type:'word', note:'眉开眼笑非常高兴', association:'听到好消息他笑逐颜开' },
+    { id:'w57', word:'英姿飒爽', pinyin:'yīng zī sà shuǎng', source:'金波作品', scene:'写人', type:'word', note:'英俊威武姿态豪迈', association:'运动员们英姿飒爽' },
+    { id:'w58', word:'天真烂漫', pinyin:'tiān zhēn làn màn', source:'《快乐读书吧》', scene:'写人', type:'word', note:'纯真自然不做作', association:'孩子们天真烂漫的笑容' },
+    { id:'w59', word:'垂头丧气', pinyin:'chuí tóu sàng qì', source:'课标经典必读', scene:'写人', type:'word', note:'低着头没精打采', association:'输了比赛他垂头丧气' },
+    { id:'w60', word:'喜气洋洋', pinyin:'xǐ qì yáng yáng', source:'金波作品', scene:'写人', type:'word', note:'充满欢喜的气氛', association:'过年了家家户户喜气洋洋' },
+    { id:'w61', word:'熙熙攘攘', pinyin:'xī xī rǎng rǎng', source:'课标经典必读', scene:'写事', type:'word', note:'人来人往非常热闹', association:'集市上熙熙攘攘好不热闹' },
+    { id:'w62', word:'争先恐后', pinyin:'zhēng xiān kǒng hòu', source:'《快乐读书吧》', scene:'写事', type:'word', note:'抢着向前唯恐落后', association:'同学们争先恐后地举手' },
+    { id:'w63', word:'一帆风顺', pinyin:'yī fān fēng shùn', source:'金波作品', scene:'写事', type:'word', note:'比喻非常顺利', association:'祝你的学习一帆风顺' },
+    { id:'w64', word:'热火朝天', pinyin:'rè huǒ cháo tiān', source:'课标经典必读', scene:'写事', type:'word', note:'场面气氛热烈高涨', association:'大扫除干得热火朝天' },
+    { id:'w65', word:'千辛万苦', pinyin:'qiān xīn wàn kǔ', source:'《快乐读书吧》', scene:'写事', type:'word', note:'非常辛苦', association:'妈妈千辛万苦把我养大' },
+    { id:'w66', word:'马不停蹄', pinyin:'mǎ bù tíng tí', source:'金波作品', scene:'写事', type:'word', note:'一刻不停地前进', association:'他马不停蹄地赶去学校' },
+    { id:'w67', word:'欢声雷动', pinyin:'huān shēng léi dòng', source:'课标经典必读', scene:'写事', type:'word', note:'欢呼声像雷一样响亮', association:'表演结束台下欢声雷动' },
+    { id:'w68', word:'齐心协力', pinyin:'qí xīn xié lì', source:'《快乐读书吧》', scene:'写事', type:'word', note:'大家一条心共同努力', association:'我们齐心协力完成了任务' },
+    { id:'w69', word:'满载而归', pinyin:'mǎn zài ér guī', source:'课标经典必读', scene:'写事', type:'word', note:'收获很大地回来', association:'我们去图书馆满载而归' },
+    { id:'w70', word:'人山人海', pinyin:'rén shān rén hǎi', source:'金波作品', scene:'写事', type:'word', note:'形容人聚集得非常多', association:'广场上人山人海' },
+    { id:'w71', word:'开开心心', pinyin:'kāi kāi xīn xīn', source:'《快乐读书吧》', scene:'写事', type:'word', note:'高高兴兴的样子', association:'我们开开心心地去春游' },
+    { id:'w72', word:'热热闹闹', pinyin:'rè rè nào nào', source:'课标经典必读', scene:'写事', type:'word', note:'气氛活跃热闹', association:'春节家里热热闹闹' },
+    { id:'w73', word:'快快乐乐', pinyin:'kuài kuài lè lè', source:'金波作品', scene:'写事', type:'word', note:'非常快乐', association:'我们快快乐乐地过六一' },
+    { id:'w74', word:'蹦蹦跳跳', pinyin:'bèng bèng tiào tiào', source:'《快乐读书吧》', scene:'写事', type:'word', note:'高兴地跳跃', association:'孩子们蹦蹦跳跳地放学' },
+    { id:'w75', word:'五光十色', pinyin:'wǔ guāng shí sè', source:'《快乐读书吧》', scene:'写物', type:'word', note:'色彩鲜艳花样繁多', association:'贝壳闪着五光十色的光芒' },
+    { id:'w76', word:'栩栩如生', pinyin:'xǔ xǔ rú shēng', source:'课标经典必读', scene:'写物', type:'word', note:'画作或描述非常逼真', association:'画上的金鱼栩栩如生' },
+    { id:'w77', word:'千姿百态', pinyin:'qiān zī bǎi tài', source:'金波作品', scene:'写物', type:'word', note:'姿态多种多样', association:'黄山的石头千姿百态' },
+    { id:'w78', word:'五颜六色', pinyin:'wǔ yán liù sè', source:'《快乐读书吧》', scene:'写物', type:'word', note:'颜色非常多', association:'花园里五颜六色的花开了' },
+    { id:'w79', word:'小巧玲珑', pinyin:'xiǎo qiǎo líng lóng', source:'课标经典必读', scene:'写物', type:'word', note:'小而精致灵巧', association:'这个音乐盒小巧玲珑' },
+    { id:'w80', word:'晶莹剔透', pinyin:'jīng yíng tī tòu', source:'金波作品', scene:'写物', type:'word', note:'光亮透明', association:'水晶球晶莹剔透' },
+    { id:'w81', word:'活灵活现', pinyin:'huó líng huó xiàn', source:'课标经典必读', scene:'写物', type:'word', note:'形容描述或模仿很逼真', association:'他把故事讲得活灵活现' },
+    { id:'w82', word:'琳琅满目', pinyin:'lín láng mǎn mù', source:'金波作品', scene:'写物', type:'word', note:'美好的东西很多', association:'商店里商品琳琅满目' },
+    { id:'w83', word:'美不胜收', pinyin:'měi bù shèng shōu', source:'课标经典必读', scene:'写物', type:'word', note:'美好的东西太多看不过来', association:'风景美不胜收' },
+    { id:'w84', word:'闪闪发光', pinyin:'shǎn shǎn fā guāng', source:'金波作品', scene:'写物', type:'word', note:'光芒闪烁', association:'星星闪闪发光' },
+    { id:'w85', word:'奇形怪状', pinyin:'qí xíng guài zhuàng', source:'《快乐读书吧》', scene:'写物', type:'word', note:'形状奇特古怪', association:'海边的石头奇形怪状' },
+    { id:'w86', word:'光彩夺目', pinyin:'guāng cǎi duó mù', source:'金波作品', scene:'写物', type:'word', note:'光泽色彩耀眼', association:'钻石光彩夺目' },
+    { id:'w87', word:'变化多端', pinyin:'biàn huà duō duān', source:'《快乐读书吧》', scene:'写物', type:'word', note:'变化很多', association:'天上的云变化多端' },
+    { id:'w88', word:'惟妙惟肖', pinyin:'wéi miào wéi xiào', source:'金波作品', scene:'写物', type:'word', note:'描写或模仿得非常逼真', association:'他学鸟叫学得惟妙惟肖' },
+    { id:'w89', word:'千奇百怪', pinyin:'qiān qí bǎi guài', source:'《快乐读书吧》', scene:'写物', type:'word', note:'各种各样稀奇古怪', association:'海底生物千奇百怪' },
+    { id:'w90', word:'古色古香', pinyin:'gǔ sè gǔ xiāng', source:'课标经典必读', scene:'写物', type:'word', note:'有古老典雅的色彩情调', association:'这座房子古色古香' },
+    { id:'w91', word:'坚持不懈', pinyin:'jiān chí bù xiè', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'坚持到底不松懈', association:'他坚持不懈地练习终于成功了' },
+    { id:'w92', word:'勤能补拙', pinyin:'qín néng bǔ zhuō', source:'课标经典必读', scene:'哲理', type:'word', note:'勤奋可以弥补笨拙', association:'勤能补拙只要努力就能进步' },
+    { id:'w93', word:'水滴石穿', pinyin:'shuǐ dī shí chuān', source:'金波作品', scene:'哲理', type:'word', note:'水不断滴能把石头滴穿', association:'水滴石穿贵在坚持' },
+    { id:'w94', word:'笨鸟先飞', pinyin:'bèn niǎo xiān fēi', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'能力差的人先行动', association:'笨鸟先飞早入林' },
+    { id:'w95', word:'持之以恒', pinyin:'chí zhī yǐ héng', source:'课标经典必读', scene:'哲理', type:'word', note:'长久地坚持下去', association:'学习要持之以恒' },
+    { id:'w96', word:'积少成多', pinyin:'jī shǎo chéng duō', source:'金波作品', scene:'哲理', type:'word', note:'一点点积累变成很多', association:'每天背一个单词积少成多' },
+    { id:'w97', word:'熟能生巧', pinyin:'shú néng shēng qiǎo', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'熟练了就能找到窍门', association:'弹琴靠的是熟能生巧' },
+    { id:'w98', word:'学无止境', pinyin:'xué wú zhǐ jìng', source:'课标经典必读', scene:'哲理', type:'word', note:'学习没有尽头', association:'学无止境要活到老学到老' },
+    { id:'w99', word:'精益求精', pinyin:'jīng yì qiú jīng', source:'金波作品', scene:'哲理', type:'word', note:'好了还要求更好', association:'他对作品精益求精' },
+    { id:'w100', word:'自强不息', pinyin:'zì qiáng bù xī', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'自己努力向上不停止', association:'我们要自强不息' },
+    { id:'w101', word:'铁杵磨针', pinyin:'tiě chǔ mó zhēn', source:'课标经典必读', scene:'哲理', type:'word', note:'比喻有恒心就能成功', association:'铁杵磨针靠的是坚持' },
+    { id:'w102', word:'日积月累', pinyin:'rì jī yuè lěi', source:'金波作品', scene:'哲理', type:'word', note:'一天天一月月地积累', association:'日积月累知识就丰富了' },
+    { id:'w103', word:'有志竟成', pinyin:'yǒu zhì jìng chéng', source:'课标经典必读', scene:'哲理', type:'word', note:'有志向终究能成功', association:'有志竟成只要努力就能实现梦想' },
+    { id:'w104', word:'脚踏实地', pinyin:'jiǎo tà shí dì', source:'金波作品', scene:'哲理', type:'word', note:'做事踏实不浮躁', association:'做事要脚踏实地' },
+    { id:'w105', word:'千里之行', pinyin:'qiān lǐ zhī xíng', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'走一千里路从第一步开始', association:'千里之行始于足下' },
+    { id:'w106', word:'聚沙成塔', pinyin:'jù shā chéng tǎ', source:'课标经典必读', scene:'哲理', type:'word', note:'把沙子聚起来能成塔', association:'聚沙成塔知识慢慢积累' },
+    { id:'w107', word:'锲而不舍', pinyin:'qiè ér bù shě', source:'金波作品', scene:'哲理', type:'word', note:'不停地雕刻比喻坚持不懈', association:'学习要有锲而不舍的精神' },
+    { id:'w108', word:'百折不挠', pinyin:'bǎi zhé bù náo', source:'《快乐读书吧》', scene:'哲理', type:'word', note:'多次受挫折也不屈服', association:'他百折不挠终于成功了' },
+    { id:'w109', word:'愚公移山', pinyin:'yú gōng yí shān', source:'课标经典必读', scene:'哲理', type:'word', note:'比喻有毅力不怕困难', association:'愚公移山的精神值得我们学习' },
+    // 好句（比喻句、拟人句）- 共30句，每天1句轮换30天
     { id:'s1', source:'《快乐读书吧》', scene:'写景', type:'sentence', note:'比喻句', content:'秋天的枫叶像一团团燃烧的火焰，染红了整座山坡。', association:'写秋天景色' },
     { id:'s2', source:'金波作品', scene:'写景', type:'sentence', note:'拟人句', content:'春风温柔地抚摸着大地，唤醒了沉睡的小草。', association:'写春天到来' },
     { id:'s3', source:'课标经典必读', scene:'写事', type:'sentence', note:'比喻句', content:'他的笑声像一串银铃，清脆地回荡在教室里。', association:'写欢乐场景' },
     { id:'s4', source:'金波作品', scene:'写人', type:'sentence', note:'比喻句', content:'妈妈的眼睛像两颗黑葡萄，总是温柔地看着我。', association:'写人物外貌' },
     { id:'s5', source:'《快乐读书吧》', scene:'写物', type:'sentence', note:'拟人句', content:'柳树弯着腰，长长的辫子垂到水面上，好像在照镜子。', association:'写柳树' },
-    { id:'s6', source:'课标经典必读', scene:'哲理', type:'sentence', note:'比喻句', content:'书就像一盏明灯，照亮了我们前进的道路。', association:'写读书的意义' }
+    { id:'s6', source:'课标经典必读', scene:'哲理', type:'sentence', note:'比喻句', content:'书就像一盏明灯，照亮了我们前进的道路。', association:'写读书的意义' },
+    { id:'s7', source:'《快乐读书吧》', scene:'写景', type:'sentence', note:'比喻句', content:'弯弯的月亮像一艘小船，静静地挂在深蓝的天空中。', association:'写夜空' },
+    { id:'s8', source:'金波作品', scene:'写景', type:'sentence', note:'拟人句', content:'太阳公公露出了笑脸，把金色的阳光洒向大地。', association:'写日出' },
+    { id:'s9', source:'课标经典必读', scene:'写人', type:'sentence', note:'比喻句', content:'奶奶的手像老树皮一样粗糙，却温暖了我整个童年。', association:'写亲情' },
+    { id:'s10', source:'《快乐读书吧》', scene:'写事', type:'sentence', note:'比喻句', content:'时间就像流水一样，一去不复返。', association:'珍惜时间' },
+    { id:'s11', source:'金波作品', scene:'写物', type:'sentence', note:'拟人句', content:'蒲公英撑开小伞，乘着风飞向远方。', association:'写蒲公英' },
+    { id:'s12', source:'课标经典必读', scene:'写景', type:'sentence', note:'比喻句', content:'雨后的彩虹像一座七彩的桥，横跨在天空中。', association:'写彩虹' },
+    { id:'s13', source:'《快乐读书吧》', scene:'写景', type:'sentence', note:'拟人句', content:'小溪一路唱着欢快的歌，奔向远方的大海。', association:'写溪流' },
+    { id:'s14', source:'金波作品', scene:'写人', type:'sentence', note:'比喻句', content:'老师的微笑像春天的阳光，照得我心里暖洋洋的。', association:'写老师' },
+    { id:'s15', source:'课标经典必读', scene:'写事', type:'sentence', note:'比喻句', content:'友谊就像一棵小树，需要用心浇灌才能长大。', association:'写友谊' },
+    { id:'s16', source:'《快乐读书吧》', scene:'写物', type:'sentence', note:'比喻句', content:'雪花像白色的蝴蝶，在空中翩翩起舞。', association:'写雪景' },
+    { id:'s17', source:'金波作品', scene:'哲理', type:'sentence', note:'比喻句', content:'困难就像一座高山，爬上去才能看到最美的风景。', association:'写克服困难' },
+    { id:'s18', source:'课标经典必读', scene:'写景', type:'sentence', note:'拟人句', content:'小草从泥土里探出头来，好奇地张望着这个世界。', association:'写春天' },
+    { id:'s19', source:'《快乐读书吧》', scene:'写人', type:'sentence', note:'比喻句', content:'弟弟的脸蛋像红苹果，让人忍不住想亲一口。', association:'写人物' },
+    { id:'s20', source:'金波作品', scene:'写景', type:'sentence', note:'比喻句', content:'湖面平静得像一面镜子，倒映着蓝天白云。', association:'写湖水' },
+    { id:'s21', source:'课标经典必读', scene:'写事', type:'sentence', note:'拟人句', content:'风儿轻轻地推着秋千，好像在哄小朋友玩耍。', association:'写童年' },
+    { id:'s22', source:'《快乐读书吧》', scene:'写物', type:'sentence', note:'比喻句', content:'萤火虫像一颗颗小星星，在草丛中飞来飞去。', association:'写夏夜' },
+    { id:'s23', source:'金波作品', scene:'哲理', type:'sentence', note:'比喻句', content:'知识就像海洋，我们永远也学不完。', association:'写学习' },
+    { id:'s24', source:'课标经典必读', scene:'写景', type:'sentence', note:'比喻句', content:'满树的桃花像粉色的云霞，美丽极了。', association:'写桃花' },
+    { id:'s25', source:'《快乐读书吧》', scene:'写人', type:'sentence', note:'拟人句', content:'老槐树张开巨大的手臂，为人们遮挡烈日。', association:'写大树' },
+    { id:'s26', source:'金波作品', scene:'写景', type:'sentence', note:'比喻句', content:'夕阳把天空染成了一幅金色的画卷。', association:'写黄昏' },
+    { id:'s27', source:'课标经典必读', scene:'写事', type:'sentence', note:'比喻句', content:'童年就像一本精彩的故事书，每一页都值得回味。', association:'写童年' },
+    { id:'s28', source:'《快乐读书吧》', scene:'写物', type:'sentence', note:'拟人句', content:'小花猫伸了个懒腰，优雅地走到阳光下。', association:'写小猫' },
+    { id:'s29', source:'金波作品', scene:'哲理', type:'sentence', note:'比喻句', content:'信心就像翅膀，能带我们飞向更高的天空。', association:'写信心' },
+    { id:'s30', source:'课标经典必读', scene:'写人', type:'sentence', note:'比喻句', content:'爷爷的故事像一坛老酒，越品越有味道。', association:'写爷爷' },
   ],
   topics:['写人','写事','写景','写物','哲理']
 };
@@ -1710,8 +1831,39 @@ function showScienceLesson(bid,uid,lid){
 /* ⑩ 好词好句 */
 function renderWords(){
   const words=Store.S.words||[];
-  let html=`<div class="card"><div class="card-title">✨ 好词好句积累</div>
-    <div class="flex-between" style="margin-bottom:12px;"><span class="tag tag-blue">每日提取4个字的好词语+1个好句 · 已积累 ${words.length} 条</span>
+  const day=getCurDay();
+  const seed=window.DATA_WORDS.seed;
+  const allWords=seed.filter(x=>x.type==='word');
+  const allSentences=seed.filter(x=>x.type==='sentence');
+  // 每日4个词语+1个好句，30天不重样
+  const wordStart=((day-1)*4)%allWords.length;
+  const todayWords=[];
+  for(let i=0;i<4;i++){ todayWords.push(allWords[(wordStart+i)%allWords.length]); }
+  const todaySentence=allSentences[(day-1)%allSentences.length];
+  // 今日好词好句卡片
+  let html=`<div class="card" style="background:linear-gradient(135deg,#fff9f0,#fff5e6);border:2px solid #ffc069;">
+    <div class="card-title">📅 今日好词好句 · 第${day}天</div>
+    <div style="margin-bottom:12px;"><span class="tag tag-orange">⭐ 每日4个好词 + 1个好句</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">`;
+  todayWords.forEach(w=>{
+    html+=`<div style="background:#fff;padding:10px 12px;border-radius:10px;border:1px solid #ffe0b0;">
+      <div style="font-size:16px;font-weight:bold;color:var(--primary);">${w.word}</div>
+      <div style="font-size:12px;color:var(--text-light);">${w.pinyin} · ${w.source}</div>
+      <div style="font-size:13px;margin-top:4px;">释义：${w.note}</div>
+      <div style="font-size:12px;color:#999;">联想：${w.association}</div>
+    </div>`;
+  });
+  html+=`</div>
+    <div style="background:#fff;padding:12px;border-radius:10px;border:2px dashed #ffc069;">
+      <div style="font-size:14px;font-weight:bold;color:var(--accent);margin-bottom:6px;">📝 今日好句 · ${todaySentence.note}</div>
+      <div style="font-size:15px;line-height:1.7;">${todaySentence.content}</div>
+      <div style="font-size:12px;color:var(--text-light);margin-top:6px;">来源：${todaySentence.source} | 场景：${todaySentence.scene} | 联想：${todaySentence.association}</div>
+      <div style="margin-top:8px;"><button class="btn btn-soft btn-sm" onclick="Speech.speak('${todaySentence.content.replace(/'/g,"\\'")}')">🔊 朗读好句</button>
+      <button class="btn btn-primary btn-sm" onclick="finishTask('words',{lesson:'daily_words_'+day,title:'今日好词好句·第'+day+'天'})">✅ 打卡今日</button></div>
+    </div></div>`;
+  // 全部积累
+  html+=`<div class="card"><div class="card-title">📚 全部积累</div>
+    <div class="flex-between" style="margin-bottom:12px;"><span class="tag tag-blue">已积累 ${words.length} 条</span>
     <button class="btn btn-primary btn-sm" onclick="showAddWord()">➕ 新增积累</button></div>
     <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;"><button class="btn btn-soft btn-sm" onclick="renderWordsList('')">全部</button>`;
   window.DATA_WORDS.topics.forEach(t=>{html+=`<button class="btn btn-soft btn-sm" onclick="renderWordsList('${t}')">${t}</button>`;});
